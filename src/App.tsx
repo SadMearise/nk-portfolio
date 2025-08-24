@@ -1,7 +1,8 @@
 import { FC } from "react";
+import { Home } from "./pages";
 
-const Page: FC = () => {
-  return <h1 className="text-3xl underline text-red-200">Page</h1>;
+const App: FC = () => {
+  return <Home />;
 };
 
-export default Page;
+export default App;
