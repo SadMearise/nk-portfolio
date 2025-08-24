@@ -24,3 +24,11 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
+.x-indent {
+  @apply sm:px-10 px-5 lg:px-16;
+}
+
+.burger-line {
+  @apply absolute left-1/2 -translate-x-1/2 w-[19px] h-[2px] bg-neutral-400 rounded-full transition-all group-hover:bg-white;
+}
