@@ -42,11 +42,15 @@ const Header: FC<Props> = ({ className }) => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="max-h-screen text-center"
+            className="max-h-screen overflow-hidden text-center"
             initial={{ opacity: 0, x: -10, height: 0 }}
             animate={{ opacity: 1, x: 0, height: "auto" }}
             exit={{ opacity: 0, x: -10, height: 0 }}
-            transition={{ duration: 0.3 }}
+            transition={{
+              x: { duration: 0.4, delay: 0.1 },
+              height: { duration: 0.2 },
+              opacity: { duration: 0.4, delay: 0.1 },
+            }}
           >
             <Navigation navItems={navItems} />
           </motion.div>
