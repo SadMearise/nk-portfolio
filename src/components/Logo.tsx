@@ -12,7 +12,7 @@ const Logo: FC<Props> = ({ className }) => {
       href="/"
       className={cn(
         className,
-        "text-xl font-bold transition-colors text-neutral-400 hover:text-white",
+        "text-xl font-bold text-neutral-400 transition-colors hover:text-white",
       )}
     >
       {PROJECT_NAME}

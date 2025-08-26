@@ -23,7 +23,7 @@ const BurgerButton: FC<Props> = ({ className, isOpen, onClick }) => {
         "flex cursor-pointer text-neutral-400 hover:text-white focus:outline-none",
       )}
     >
-      <div className="relative w-[23px] h-[23px] group">
+      <div className="group relative size-[23px]">
         {burgerLines.map((line, index) => (
           <span
             key={index}

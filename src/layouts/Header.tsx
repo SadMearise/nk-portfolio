@@ -24,8 +24,8 @@ const Header: FC<Props> = ({ className }) => {
   useOnScroll(closeMobileMenu);
 
   return (
-    <header className={cn(className, "inset-x-0 w-full backdrop-blur-lg bg-primary/40")}>
-      <div className="mx-auto x-indent max-w-7xl">
+    <header className={cn(className, "inset-x-0 w-full bg-primary/40 backdrop-blur-lg")}>
+      <div className="x-indent mx-auto max-w-7xl">
         <div className="flex items-center justify-between py-2 sm:py-0">
           <Logo />
           <BurgerButton
@@ -35,14 +35,14 @@ const Header: FC<Props> = ({ className }) => {
           />
           <Navigation
             navItems={navItems}
-            className="sm:block hidden"
+            className="hidden sm:block"
           />
         </div>
       </div>
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="text-center max-h-screen"
+            className="max-h-screen text-center"
             initial={{ opacity: 0, x: -10, height: 0 }}
             animate={{ opacity: 1, x: 0, height: "auto" }}
             exit={{ opacity: 0, x: -10, height: 0 }}
