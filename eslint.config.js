@@ -8,6 +8,7 @@ import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
 import importPlugin from "eslint-plugin-import";
 import prettierPlugin from "eslint-plugin-prettier";
 import eslintConfigPrettier from "eslint-config-prettier";
+import eslintTailwindPlugin from "eslint-plugin-tailwindcss";
 
 export default tseslint.config(
   {
@@ -18,12 +19,14 @@ export default tseslint.config(
       "react-refresh": eslintReactRefreshPlugin,
       prettier: prettierPlugin,
       jsxA11y: jsxA11yPlugin,
+      tailwindcss: eslintTailwindPlugin,
     },
   },
   js.configs.recommended,
   ...tseslint.configs.recommended,
   jsxA11yPlugin.flatConfigs.recommended,
   importPlugin.flatConfigs.recommended,
+  eslintTailwindPlugin.configs["flat/recommended"],
   {
     languageOptions: {
       ecmaVersion: "latest",
@@ -41,6 +44,10 @@ export default tseslint.config(
     rules: {
       ...eslintConfigPrettier.rules,
       "prettier/prettier": "error",
+
+      "tailwindcss/classnames-order": "error",
+      "tailwindcss/enforces-shorthand": "error",
+      "tailwindcss/no-custom-classname": "error",
 
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn",
@@ -156,6 +163,10 @@ export default tseslint.config(
   {
     settings: {
       react: { pragma: "React", version: "detect" },
+      tailwindcss: {
+        callees: ["cn"],
+        config: "tailwind.config.js",
+      },
       "import/resolver": {
         typescript: { project: "./tsconfig.json" },
         node: { extensions: [".js", ".jsx", ".ts", ".tsx"] },

@@ -4,10 +4,6 @@ const config = {
   plugins: ["stylelint-order"],
   overrides: [
     {
-      files: ["**/*.tsx", "**/*.jsx"],
-      customSyntax: "postcss-jsx",
-    },
-    {
       files: ["**/*.css", "**/*.scss", "**/*.sass"],
       rules: {
         "at-rule-no-deprecated": [
@@ -19,6 +15,7 @@ const config = {
       },
     },
   ],
+  ignoreFiles: ["**/*.tsx", "**/*.jsx"],
   rules: {
     "order/properties-alphabetical-order": true,
     "no-empty-source": null,
