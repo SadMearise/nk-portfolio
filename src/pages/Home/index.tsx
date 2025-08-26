@@ -4,7 +4,7 @@ import { Header } from "../../layouts";
 const Home: FC = () => {
   return (
     <div className="container mx-auto max-w-7xl">
-      <Header />
+      <Header className="fixed z-20" />
     </div>
   );
 };

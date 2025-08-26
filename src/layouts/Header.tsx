@@ -1,7 +1,8 @@
 import { FC, useState } from "react";
 import { cn } from "../utils/helpers";
-import { motion } from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
 import { BurgerButton, Logo, Navigation } from "../components";
+import { useOnScroll } from "../utils/hooks";
 
 type Props = {
   className?: string;
@@ -18,9 +19,12 @@ const Header: FC<Props> = ({ className }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMobileMenu = () => setIsOpen(!isOpen);
+  const closeMobileMenu = () => setIsOpen(false);
+
+  useOnScroll(closeMobileMenu);
 
   return (
-    <div className={cn(className, "fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary/40")}>
+    <header className={cn(className, "inset-x-0 w-full backdrop-blur-lg bg-primary/40")}>
       <div className="mx-auto x-indent max-w-7xl">
         <div className="flex items-center justify-between py-2 sm:py-0">
           <Logo />
@@ -35,17 +39,20 @@ const Header: FC<Props> = ({ className }) => {
           />
         </div>
       </div>
-      {isOpen && (
-        <motion.div
-          className="block overflow-auto text-center sm:hidden max-h-screen"
-          initial={{ opacity: 0, x: -10 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.3 }}
-        >
-          <Navigation navItems={navItems} />
-        </motion.div>
-      )}
-    </div>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            className="text-center max-h-screen"
+            initial={{ opacity: 0, x: -10, height: 0 }}
+            animate={{ opacity: 1, x: 0, height: "auto" }}
+            exit={{ opacity: 0, x: -10, height: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <Navigation navItems={navItems} />
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </header>
   );
 };
 
