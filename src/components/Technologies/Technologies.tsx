@@ -15,7 +15,7 @@ const Technologies: FC<Props> = ({ className }) => {
         {TECHNOLOGIES.map((technology, index) => (
           <RoundedIcon
             key={index}
-            src={`assets/techs/${technology}.svg`}
+            src={technology.link}
           />
         ))}
       </OrbitingCircles>
@@ -28,7 +28,7 @@ const Technologies: FC<Props> = ({ className }) => {
         {TECHNOLOGIES.reverse().map((technology, index) => (
           <RoundedIcon
             key={index}
-            src={`assets/techs/${technology}.svg`}
+            src={technology.link}
           />
         ))}
       </OrbitingCircles>
