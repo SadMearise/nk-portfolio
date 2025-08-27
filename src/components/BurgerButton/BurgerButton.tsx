@@ -1,18 +1,12 @@
 import { FC } from "react";
-import { cn } from "../utils/helpers";
+import { cn } from "../../utils/helpers";
+import { BURGER_LINES } from "./constants";
 
 type Props = {
   className?: string;
   isOpen: boolean;
   onClick: () => void;
 };
-
-const burgerLines = [
-  { open: "-rotate-45 -translate-y-1/2 top-1/2", closed: "top-[3px]" },
-  { open: "opacity-0", closed: "top-[8px] opacity-100" },
-  { open: "opacity-0", closed: "top-[13px] opacity-100" },
-  { open: "rotate-45 -translate-y-1/2 top-1/2", closed: "top-[18px]" },
-];
 
 const BurgerButton: FC<Props> = ({ className, isOpen, onClick }) => {
   return (
@@ -24,7 +18,7 @@ const BurgerButton: FC<Props> = ({ className, isOpen, onClick }) => {
       )}
     >
       <div className="group relative size-[23px]">
-        {burgerLines.map((line, index) => (
+        {BURGER_LINES.map((line, index) => (
           <span
             key={index}
             className={cn("burger-line", isOpen ? line.open : line.closed)}

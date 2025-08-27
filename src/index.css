@@ -36,10 +36,10 @@ body {
   @apply bg-gradient-to-b from-storm to-indigo;
 }
 
-.bg-gradient-accent  {
+.bg-gradient-accent {
   @apply bg-gradient-to-b from-royal to-lavender;
 }
 
-.bg-gradient-dark    {
+.bg-gradient-dark {
   @apply bg-gradient-to-tl from-[#3A3A3A] via-[#242424] to-[#3A3A3A];
 }

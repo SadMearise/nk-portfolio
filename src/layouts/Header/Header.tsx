@@ -1,19 +1,13 @@
 import { FC, useState } from "react";
-import { cn } from "../utils/helpers";
+import { cn } from "../../utils/helpers";
 import { AnimatePresence, motion } from "motion/react";
-import { BurgerButton, Logo, Navigation } from "../components";
-import { useOnScroll } from "../utils/hooks";
+import { BurgerButton, Logo, Navigation } from "../../components";
+import { useOnScroll } from "../../utils/hooks";
+import { NAV_ITEMS } from "./constants";
 
 type Props = {
   className?: string;
 };
-
-const navItems = [
-  { href: "#home", title: "Home" },
-  { href: "#about", title: "About" },
-  { href: "#work", title: "Work" },
-  { href: "#contacts", title: "Contacts" },
-];
 
 const Header: FC<Props> = ({ className }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +28,7 @@ const Header: FC<Props> = ({ className }) => {
             className="sm:hidden"
           />
           <Navigation
-            navItems={navItems}
+            navItems={NAV_ITEMS}
             className="hidden sm:block"
           />
         </div>
@@ -52,7 +46,7 @@ const Header: FC<Props> = ({ className }) => {
               opacity: { duration: 0.4, delay: 0.1 },
             }}
           >
-            <Navigation navItems={navItems} />
+            <Navigation navItems={NAV_ITEMS} />
           </motion.div>
         )}
       </AnimatePresence>

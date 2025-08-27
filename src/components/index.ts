@@ -1,5 +1,5 @@
 import Navigation from "./Navigation";
-import BurgerButton from "./BurgerButton";
+import { BurgerButton } from "./BurgerButton";
 import Logo from "./Logo";
 import HeroText from "./HeroText";
 import FlipWords from "./FlipWords";
