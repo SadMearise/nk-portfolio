@@ -6,6 +6,12 @@ import FlipWords from "./FlipWords";
 import ParallaxBackground from "./ParallaxBackground";
 import Astronaut from "./Astronaut";
 import CameraRig from "./CameraRig";
+import FloatingCard from "./FloatingCard";
+import Globe from "./Globe";
+import CopyButton from "./CopyButton";
+import OrbitingCircles from "./OrbitingCircles";
+import RoundedIcon from "./RoundedIcon";
+import { Technologies } from "./Technologies";
 
 export {
   Navigation,
@@ -16,4 +22,10 @@ export {
   ParallaxBackground,
   Astronaut,
   CameraRig,
+  FloatingCard,
+  Globe,
+  CopyButton,
+  OrbitingCircles,
+  Technologies,
+  RoundedIcon,
 };

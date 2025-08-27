@@ -115,7 +115,6 @@ export default tseslint.config(
       "prefer-destructuring": ["error", { array: true, object: true }],
       "object-curly-spacing": ["error", "always"],
       "object-property-newline": ["error", { allowMultiplePropertiesPerLine: true }],
-      indent: ["error", 2, { SwitchCase: 1 }],
       "array-element-newline": ["error", "consistent"],
       "array-bracket-newline": ["error", "consistent"],
       "object-curly-newline": ["error", { multiline: true, consistent: true }],

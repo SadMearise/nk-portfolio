@@ -1,12 +1,15 @@
 import { FC } from "react";
 import { Header } from "../../layouts";
-import { Hero } from "./sections";
+import { Hero, About } from "./sections";
 
 const Home: FC = () => {
   return (
     <div className="container mx-auto max-w-7xl">
       <Header className="fixed z-20" />
-      <Hero />
+      <main>
+        <Hero />
+        <About />
+      </main>
     </div>
   );
 };
