@@ -43,3 +43,7 @@ body {
 .bg-gradient-dark {
   @apply bg-gradient-to-tl from-[#3A3A3A] via-[#242424] to-[#3A3A3A];
 }
+
+.hover-lift {
+  @apply duration-200 hover:-translate-y-1;
+}

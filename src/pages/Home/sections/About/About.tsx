@@ -15,7 +15,7 @@ const About: FC<Props> = ({ className }) => {
       <h2 className="heading-2">About Me</h2>
       <div className="mt-12 grid grid-cols-1 gap-4 md:auto-rows-[18rem] md:grid-cols-6">
         {/* Grid 1 */}
-        <div className="bg-gradient-primary relative row-span-2 flex h-60 items-end overflow-hidden rounded-2xl p-6 duration-200 will-change-transform hover:-translate-y-1 md:col-span-3 md:h-full">
+        <div className="bg-gradient-primary hover-lift relative row-span-2 flex h-60 items-end overflow-hidden rounded-2xl  p-6 will-change-transform md:col-span-3 md:h-full">
           <img
             src="assets/coding-pov.png"
             className="absolute -right-20 -top-4 scale-[1.75] md:inset-y-10 md:left-[200px] md:scale-[3] lg:scale-[2.5]"
@@ -33,7 +33,7 @@ const About: FC<Props> = ({ className }) => {
           <div className="pointer-events-none absolute inset-x-0 -bottom-4 h-1/2 bg-gradient-to-t from-indigo sm:h-1/3" />
         </div>
         {/* Grid 2 */}
-        <div className="bg-gradient-primary relative row-span-1 h-60 overflow-hidden rounded-2xl p-6 duration-200 will-change-transform hover:-translate-y-1 md:col-span-3 md:h-full">
+        <div className="bg-gradient-primary hover-lift relative row-span-1 h-60 overflow-hidden rounded-2xl p-6 will-change-transform md:col-span-3 md:h-full">
           <div
             className="flex size-full items-center justify-center"
             ref={grid2ContainerRef}
@@ -49,7 +49,7 @@ const About: FC<Props> = ({ className }) => {
           </div>
         </div>
         {/* Grid 3 */}
-        <div className="bg-gradient-dark relative row-span-1 h-60 overflow-hidden rounded-2xl p-6 duration-200 will-change-transform hover:-translate-y-1 md:col-span-3 md:h-full">
+        <div className="bg-gradient-dark hover-lift relative row-span-1 h-60 overflow-hidden rounded-2xl p-6 will-change-transform md:col-span-3 md:h-full">
           <div className="w-1/2">
             <p className="my-2 text-xl">Time Zone</p>
             <p className="text-secondary">
@@ -61,7 +61,7 @@ const About: FC<Props> = ({ className }) => {
           </div>
         </div>
         {/* Grid 4 */}
-        <div className="bg-gradient-accent relative row-span-1 h-60 overflow-hidden rounded-2xl p-6 duration-200 will-change-transform hover:-translate-y-1 md:col-span-2 md:h-full">
+        <div className="bg-gradient-accent relative row-span-1 h-60 overflow-hidden rounded-2xl p-6 will-change-transform hover:-translate-y-1 md:col-span-2 md:h-full">
           <div className="flex size-full flex-col items-center justify-center gap-4">
             <p className="my-2 text-center text-xl">Do you want to start a project together?</p>
             <CopyButton
@@ -72,7 +72,7 @@ const About: FC<Props> = ({ className }) => {
           </div>
         </div>
         {/* Grid 5 */}
-        <div className="bg-gradient-primary relative row-span-1 h-60 overflow-hidden rounded-2xl p-6 duration-200 will-change-transform hover:-translate-y-1 md:col-span-4 md:h-full">
+        <div className="bg-gradient-primary relative row-span-1 h-60 overflow-hidden rounded-2xl p-6 will-change-transform hover:-translate-y-1 md:col-span-4 md:h-full">
           <div className="w-1/2">
             <p className="my-2 text-xl">Tech Stack</p>
             <p className="text-secondary">
