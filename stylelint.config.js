@@ -15,7 +15,7 @@ const config = {
       },
     },
   ],
-  ignoreFiles: ["**/*.tsx", "**/*.jsx"],
+  ignoreFiles: ["**/*.tsx", "**/*.jsx", "node_modules/**", "dist/**"],
   rules: {
     "order/properties-alphabetical-order": true,
     "no-empty-source": null,
