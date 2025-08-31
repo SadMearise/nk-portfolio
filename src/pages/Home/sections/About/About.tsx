@@ -61,7 +61,7 @@ const About: FC<Props> = ({ className }) => {
           </div>
         </div>
         {/* Grid 4 */}
-        <div className="bg-gradient-accent relative row-span-1 h-60 overflow-hidden rounded-2xl p-6 hover:-translate-y-1 md:col-span-2 md:h-full">
+        <div className="bg-gradient-accent hover-lift relative row-span-1 h-60 overflow-hidden rounded-2xl p-6 md:col-span-2 md:h-full">
           <div className="flex size-full flex-col items-center justify-center gap-4">
             <p className="my-2 text-center text-xl">Do you want to start a project together?</p>
             <CopyButton
@@ -72,7 +72,7 @@ const About: FC<Props> = ({ className }) => {
           </div>
         </div>
         {/* Grid 5 */}
-        <div className="bg-gradient-primary relative row-span-1 h-60 overflow-hidden rounded-2xl p-6 hover:-translate-y-1 md:col-span-4 md:h-full">
+        <div className="bg-gradient-primary hover-lift relative row-span-1 h-60 overflow-hidden rounded-2xl p-6 md:col-span-4 md:h-full">
           <div className="w-1/2">
             <p className="my-2 text-xl">Tech Stack</p>
             <p className="text-secondary">
