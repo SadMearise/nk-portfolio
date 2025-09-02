@@ -5,7 +5,7 @@ import { Hero, About } from "./sections";
 const Home: FC = () => {
   return (
     <div className="container mx-auto max-w-7xl">
-      <Header className="fixed z-20" />
+      <Header className="fixed inset-x-0 top-0 z-20" />
       <main>
         <Hero />
         <About />

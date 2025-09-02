@@ -18,7 +18,7 @@ const Header: FC<Props> = ({ className }) => {
   useOnScroll(closeMobileMenu);
 
   return (
-    <header className={cn(className, "inset-x-0 w-full bg-primary/40 backdrop-blur-lg")}>
+    <header className={cn(className, "w-full bg-primary/40 backdrop-blur-lg")}>
       <div className="x-indent mx-auto max-w-7xl">
         <div className="flex items-center justify-between py-2 sm:py-0">
           <Logo />
