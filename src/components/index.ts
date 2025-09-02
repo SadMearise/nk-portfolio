@@ -12,6 +12,11 @@ import CopyButton from "./CopyButton";
 import OrbitingCircles from "./OrbitingCircles";
 import RoundedIcon from "./RoundedIcon";
 import { Technologies } from "./Technologies";
+import Line from "./Line";
+import Project from "./Project";
+import ProjectDetailsModal from "./ProjectDetailsModal";
+import ProjectDetails from "./ProjectDetails";
+import PreviewImage from "./PreviewImage";
 
 export {
   Navigation,
@@ -28,4 +33,9 @@ export {
   OrbitingCircles,
   Technologies,
   RoundedIcon,
+  Line,
+  Project,
+  ProjectDetails,
+  ProjectDetailsModal,
+  PreviewImage,
 };

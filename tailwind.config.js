@@ -9,6 +9,9 @@ export default {
         indigo: "#1f1e39",
         lavender: "#7a57db",
         royal: "#5c33cc",
+        sand: "#d6995c",
+        midnight: "#06091f",
+        navy: "#161a31",
       },
       keyframes: {
         orbit: {

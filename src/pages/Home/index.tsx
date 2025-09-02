@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { Header } from "../../layouts";
-import { Hero, About } from "./sections";
+import { Hero, About, Projects } from "./sections";
+import { ModalProvider } from "../../context/modal";
 
 const Home: FC = () => {
   return (
@@ -9,6 +10,9 @@ const Home: FC = () => {
       <main>
         <Hero />
         <About />
+        <ModalProvider>
+          <Projects />
+        </ModalProvider>
       </main>
     </div>
   );

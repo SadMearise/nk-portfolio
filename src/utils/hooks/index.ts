@@ -3,5 +3,19 @@ import useGLTFAnimationPlay from "./useGLTFAnimationPlay";
 import useCameraRig from "./useCameraRig";
 import useOnScroll from "./useOnScroll";
 import useCopyToClipboard from "./useCopyToClipboard";
+import useFollowCursor from "./useFollowCursor";
+import useModal from "./useModal";
+import useOnClickOutside from "./useOnClickOutside";
+import useScrollLock from "./useScrollLock";
 
-export { useFallingAnimation, useGLTFAnimationPlay, useCameraRig, useOnScroll, useCopyToClipboard };
+export {
+  useFallingAnimation,
+  useGLTFAnimationPlay,
+  useCameraRig,
+  useOnScroll,
+  useCopyToClipboard,
+  useFollowCursor,
+  useModal,
+  useOnClickOutside,
+  useScrollLock,
+};
