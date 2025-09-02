@@ -45,5 +45,28 @@ body {
 }
 
 .hover-lift {
-  @apply duration-200 hover:-translate-y-1;
+  @apply duration-200 hover:-translate-y-1 will-change-transform;
+}
+
+::-webkit-scrollbar {
+  width: 18px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+  background-color: #a3a3a3;
+  border: 6px solid transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(163 163 163 / 80%);
+}
+
+::-webkit-scrollbar-button {
+  display: none;
 }
