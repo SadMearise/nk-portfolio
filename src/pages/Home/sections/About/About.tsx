@@ -22,7 +22,13 @@ const About: FC<Props> = ({ className }) => {
           />
           <div className="z-10">
             <p className="my-2 text-xl">Hi, I'm Nikita Khrustalev</p>
-            <p className="text-secondary">
+            <p className="text-secondary sm:hidden">
+              Frontend Developer experienced in building scalable web applications. Strong knowledge
+              of responsive, cross-browser layouts and client-side architecture. Focused on code
+              quality, maintainability, and efficient teamwork, quickly adapting to deliver optimal
+              solutions.
+            </p>
+            <p className="text-secondary hidden sm:block">
               Frontend Developer with experience in building scalable and reliable web applications.
               Proficient in JavaScript, TypeScript, React, and Next.js, with a strong understanding
               of responsive, cross-browser layout and client-side application architecture. Focused
