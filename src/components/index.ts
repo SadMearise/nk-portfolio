@@ -17,6 +17,8 @@ import Project from "./Project";
 import ProjectDetailsModal from "./ProjectDetailsModal";
 import ProjectDetails from "./ProjectDetails";
 import PreviewImage from "./PreviewImage";
+import Timeline from "./Timeline";
+import TimelineItem from "./TimelineItem";
 
 export {
   Navigation,
@@ -38,4 +40,6 @@ export {
   ProjectDetails,
   ProjectDetailsModal,
   PreviewImage,
+  Timeline,
+  TimelineItem,
 };

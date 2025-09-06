@@ -1,5 +1,5 @@
 import Projects from "./Projects";
-import { Project } from "./projects.types";
+import { Project } from "./types";
 
 export { Projects };
 

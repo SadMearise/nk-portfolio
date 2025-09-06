@@ -5,7 +5,7 @@ import { Line, PreviewImage, Project, ProjectDetailsModal } from "../../../../co
 import { motion } from "motion/react";
 import { useFollowCursor } from "../../../../utils/hooks";
 import { ModalContext, ModalContextType } from "../../../../context/modal";
-import { type Project as ProjectType } from "./projects.types";
+import { type Project as ProjectType } from "./types";
 
 type Props = {
   className?: string;
