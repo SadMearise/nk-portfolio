@@ -8,6 +8,7 @@ import useModal from "./useModal";
 import useOnClickOutside from "./useOnClickOutside";
 import useScrollLock from "./useScrollLock";
 import useTimelineScroll from "./useTimelineScroll";
+import useAlert from "./useAlert";
 
 export {
   useFallingAnimation,
@@ -20,4 +21,5 @@ export {
   useOnClickOutside,
   useScrollLock,
   useTimelineScroll,
+  useAlert,
 };

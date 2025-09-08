@@ -19,6 +19,11 @@ import ProjectDetails from "./ProjectDetails";
 import PreviewImage from "./PreviewImage";
 import Timeline from "./Timeline";
 import TimelineItem from "./TimelineItem";
+import { Alert } from "./Alert";
+import Particles from "./Particles";
+import ContactForm from "./ContactForm";
+import FormFieldInput from "./FormFieldInput";
+import FormFieldTextarea from "./FormFieldTextarea";
 
 export {
   Navigation,
@@ -42,4 +47,9 @@ export {
   PreviewImage,
   Timeline,
   TimelineItem,
+  Alert,
+  Particles,
+  ContactForm,
+  FormFieldInput,
+  FormFieldTextarea,
 };
