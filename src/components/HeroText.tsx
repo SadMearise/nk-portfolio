@@ -2,6 +2,7 @@ import { FC } from "react";
 import { cn } from "../utils/helpers";
 import FlipWords from "./FlipWords";
 import { motion } from "motion/react";
+import { FIRST_NAME } from "../utils/constants";
 
 type Props = {
   className?: string;
@@ -23,7 +24,7 @@ const HeroText: FC<Props> = ({ className }) => {
           animate="animate"
           transition={{ delay: 1 }}
         >
-          Hi, I'm Nikita
+          Hi, I'm {FIRST_NAME}
         </motion.h1>
         <div className="flex flex-col items-center md:items-start">
           <motion.p

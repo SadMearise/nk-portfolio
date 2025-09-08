@@ -2,6 +2,7 @@ import { FC, useRef } from "react";
 import { cn } from "../../../../utils/helpers";
 import { FloatingCard, CopyButton, Technologies, Globe } from "../../../../components";
 import { CARDS } from "./constants";
+import { EMAIL, FIRST_NAME, LAST_NAME } from "../../../../utils/constants";
 
 type Props = {
   className?: string;
@@ -21,7 +22,9 @@ const About: FC<Props> = ({ className }) => {
             className="absolute -right-20 -top-4 scale-[1.75] md:inset-y-10 md:left-[200px] md:scale-[3] lg:scale-[2.5]"
           />
           <div className="z-10">
-            <p className="my-2 text-xl">Hi, I'm Nikita Khrustalev</p>
+            <p className="my-2 text-xl">
+              Hi, I'm {FIRST_NAME} {LAST_NAME}{" "}
+            </p>
             <p className="text-secondary sm:hidden">
               Frontend Developer experienced in building scalable web applications. Strong knowledge
               of responsive, cross-browser layouts and client-side architecture. Focused on code
@@ -71,7 +74,7 @@ const About: FC<Props> = ({ className }) => {
           <div className="flex size-full flex-col items-center justify-center gap-4">
             <p className="my-2 text-center text-xl">Do you want to start a project together?</p>
             <CopyButton
-              textToCopy="nikita.khrustalev.work@gmail.com"
+              textToCopy={EMAIL}
               label="Copy email address"
               successMessage="Email has copied"
             />
