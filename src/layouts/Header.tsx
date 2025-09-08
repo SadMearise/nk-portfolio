@@ -1,9 +1,9 @@
 import { FC, useState } from "react";
-import { cn } from "../../utils/helpers";
+import { cn } from "../utils/helpers";
 import { AnimatePresence, motion } from "motion/react";
-import { BurgerButton, Logo, Navigation } from "../../components";
-import { useOnScroll } from "../../utils/hooks";
-import { NAV_ITEMS } from "./constants";
+import { BurgerButton, Logo, Navigation } from "../components";
+import { useOnScroll } from "../utils/hooks";
+import { NAV_ITEMS } from "../utils/constants";
 
 type Props = {
   className?: string;
@@ -11,6 +11,8 @@ type Props = {
 
 const Header: FC<Props> = ({ className }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const navItemsArray = Object.values(NAV_ITEMS);
 
   const toggleMobileMenu = () => setIsOpen(!isOpen);
   const closeMobileMenu = () => setIsOpen(false);
@@ -28,7 +30,7 @@ const Header: FC<Props> = ({ className }) => {
             className="sm:hidden"
           />
           <Navigation
-            navItems={NAV_ITEMS}
+            navItems={navItemsArray}
             className="hidden sm:block"
           />
         </div>
@@ -46,7 +48,7 @@ const Header: FC<Props> = ({ className }) => {
               opacity: { duration: 0.4, delay: 0.1 },
             }}
           >
-            <Navigation navItems={NAV_ITEMS} />
+            <Navigation navItems={navItemsArray} />
           </motion.div>
         )}
       </AnimatePresence>

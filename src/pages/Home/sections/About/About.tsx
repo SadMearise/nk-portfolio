@@ -2,7 +2,7 @@ import { FC, useRef } from "react";
 import { cn } from "../../../../utils/helpers";
 import { FloatingCard, CopyButton, Technologies, Globe } from "../../../../components";
 import { CARDS } from "./constants";
-import { EMAIL, FIRST_NAME, LAST_NAME } from "../../../../utils/constants";
+import { EMAIL, FIRST_NAME, LAST_NAME, NAV_ITEMS } from "../../../../utils/constants";
 
 type Props = {
   className?: string;
@@ -12,7 +12,10 @@ const About: FC<Props> = ({ className }) => {
   const grid2ContainerRef = useRef(null);
 
   return (
-    <section className={cn(className, "x-indent section-gap")}>
+    <section
+      className={cn(className, "x-indent section-gap")}
+      id={NAV_ITEMS.about.id}
+    >
       <h2 className="heading-2">About Me</h2>
       <div className="mt-12 grid grid-cols-1 gap-4 md:auto-rows-[18rem] md:grid-cols-6">
         {/* Grid 1 */}

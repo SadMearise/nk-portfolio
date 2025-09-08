@@ -4,6 +4,7 @@ import { cn } from "../../../utils/helpers";
 import { Astronaut, CameraRig, HeroText, ParallaxBackground } from "../../../components";
 import { useMediaQuery } from "react-responsive";
 import { Float } from "@react-three/drei";
+import { NAV_ITEMS } from "../../../utils/constants";
 
 type Props = {
   className?: string;
@@ -14,7 +15,10 @@ const Hero: FC<Props> = ({ className }) => {
   const cameraPositionZ = 3;
 
   return (
-    <section className={cn(className, "x-indent min-h-screen overflow-hidden")}>
+    <section
+      className={cn(className, "x-indent min-h-screen overflow-hidden")}
+      id={NAV_ITEMS.home.id}
+    >
       <HeroText className="relative z-10 mt-20 md:mt-40" />
       <ParallaxBackground className="w-screen" />
       <div className="absolute inset-0 h-screen w-screen">

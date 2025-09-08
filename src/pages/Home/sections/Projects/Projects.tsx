@@ -6,6 +6,7 @@ import { motion } from "motion/react";
 import { useFollowCursor } from "../../../../utils/hooks";
 import { ModalContext, ModalContextType } from "../../../../context/modal";
 import { type Project as ProjectType } from "./types";
+import { NAV_ITEMS } from "../../../../utils/constants";
 
 type Props = {
   className?: string;
@@ -23,6 +24,7 @@ const Projects: FC<Props> = ({ className }) => {
     <section
       className={cn(className, "x-indent section-gap relative")}
       onMouseMove={handleMouseMove}
+      id={NAV_ITEMS.work.id}
     >
       <h2 className="heading-2">My Selected Projects</h2>
       <Line className="mt-12" />

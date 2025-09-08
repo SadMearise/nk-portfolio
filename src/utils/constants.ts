@@ -11,3 +11,10 @@ export const EMAILJS = {
   templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
   publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
 };
+
+export const NAV_ITEMS = {
+  home: { href: "#home", title: "Home", id: "home" },
+  about: { href: "#about", title: "About", id: "about" },
+  work: { href: "#work", title: "Work", id: "work" },
+  contact: { href: "#contact", title: "Contact", id: "contact" },
+};
