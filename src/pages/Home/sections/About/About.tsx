@@ -36,7 +36,7 @@ const About: FC<Props> = ({ className }) => {
               efficiently in a team, and help find optimal solutions for the product.
             </p>
           </div>
-          <div className="pointer-events-none absolute inset-x-0 -bottom-4 h-1/2 bg-gradient-to-t from-indigo sm:h-1/3" />
+          <div className="pointer-events-none absolute inset-x-0 -bottom-4 h-1/2 bg-gradient-to-t from-indigo-800 sm:h-1/3" />
         </div>
         {/* Grid 2 */}
         <div className="bg-gradient-primary hover-lift relative row-span-1 h-60 overflow-hidden rounded-2xl p-6 md:col-span-3 md:h-full">

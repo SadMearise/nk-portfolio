@@ -6,7 +6,10 @@ export default {
       colors: {
         primary: "#030412",
         storm: "#282b4b",
-        indigo: "#1f1e39",
+        indigo: {
+          100: "#e0e7ff",
+          800: "#1f1e39",
+        },
         lavender: "#7a57db",
         royal: "#5c33cc",
         sand: "#d6995c",
