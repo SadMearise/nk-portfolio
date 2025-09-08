@@ -16,7 +16,7 @@ const Hero: FC<Props> = ({ className }) => {
   return (
     <section className={cn(className, "x-indent min-h-screen overflow-hidden")}>
       <HeroText className="relative z-10 mt-20 md:mt-40" />
-      <ParallaxBackground />
+      <ParallaxBackground className="w-screen" />
       <div className="absolute inset-0 h-screen w-screen">
         <Canvas camera={{ position: [0, 1, cameraPositionZ] }}>
           <Suspense fallback={null}>
