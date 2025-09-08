@@ -21,7 +21,7 @@ body {
 }
 
 .section-gap {
-  @apply min-h-screen mt-20 md:mt-[120px];
+  @apply mt-20 md:mt-[120px];
 }
 
 .heading-2 {
@@ -33,7 +33,7 @@ body {
 }
 
 .bg-gradient-primary {
-  @apply bg-gradient-to-b from-storm to-indigo;
+  @apply bg-gradient-to-b from-storm to-indigo-800;
 }
 
 .bg-gradient-accent {
