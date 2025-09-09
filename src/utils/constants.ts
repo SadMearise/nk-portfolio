@@ -23,11 +23,11 @@ export const SOCIALS = [
   {
     name: "Telegram",
     href: "https://t.me/rtleee",
-    icon: "/assets/images/socials/telegram.svg",
+    icon: "./assets/images/socials/telegram.svg",
   },
   {
     name: "Linkedin",
     href: "https://www.linkedin.com/in/nikita-khrustalev-358a12241/",
-    icon: "/assets/images/socials/linkedin.svg",
+    icon: "./assets/images/socials/linkedin.svg",
   },
 ];

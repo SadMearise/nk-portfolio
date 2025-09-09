@@ -14,7 +14,7 @@ type GLTFResult = {
 const Astronaut: FC<Props> = ({ ...props }) => {
   const group = useRef<Group>(null);
   const { nodes, materials, animations } = useGLTF(
-    "/assets/models/tenhun_falling_spaceman_fanart.glb",
+    "./assets/models/tenhun_falling_spaceman_fanart.glb",
   ) as unknown as GLTFResult;
   const { actions } = useAnimations(animations, group);
 
@@ -117,6 +117,6 @@ const Astronaut: FC<Props> = ({ ...props }) => {
   );
 };
 
-useGLTF.preload("/assets/models/tenhun_falling_spaceman_fanart.glb");
+useGLTF.preload("./assets/models/tenhun_falling_spaceman_fanart.glb");
 
 export default Astronaut;
