@@ -1,12 +1,27 @@
-# React + Vite
+# NK Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hi, I'm **Nikita Khrustalev**, a passionate **Frontend Developer** dedicated to building modern and scalable web solutions. You can explore my work on my [portfolio website](https://sadmearise.github.io/nk-portfolio).
 
-Currently, two official plugins are available:
+## About Me
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I specialize in creating responsive, cross-browser web applications using **JavaScript, TypeScript, React, Next.js**, and other modern technologies. I focus on **code quality, maintainability**, and delivering **efficient solutions**.
 
-## Expanding the ESLint configuration
+- 📍 Based in Minsk, open to remote, hybrid, or office work worldwide.
+- 💡 Enthusiast in frontend development, clean code, and modern web technologies.
+- 🚀 Experienced with building projects from scratch, maintaining and scaling applications.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- **Languages:** JavaScript (ES5, ES6+), TypeScript, HTML, CSS, Python  
+- **Frameworks/Libraries:** React, React Router, React Query, Next.js, Redux, Redux Toolkit, Zustand, GraphQL, Axios, shadcn/ui, Material UI  
+- **Tools:** Tailwind, Sass, Webpack, Vite, Gulp, ESLint, Prettier, Jest, Docker, Git, GitHub, GitLab  
+- **Concepts:** SOLID, OOP, DRY, KISS, YAGNI, CI/CD, SPA, RESTful APIs, BEM, Agile/Scrum, Databases  
+- **Language Skills:** English A2, Russian native 
+
+## Contact
+
+If you’d like to collaborate or just want to say hi:
+
+- ✉️ **Email:** [nikita.khrustalev.work@gmail.com](#)  
+- 🌐 **LinkedIn:** [Nikita Khrustalev](https://www.linkedin.com/in/nikita-khrustalev-358a12241/)  
+- 💬 **Telegram:** [@rtleee](https://t.me/rtleee)
