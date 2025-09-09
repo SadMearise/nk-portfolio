@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Header } from "../../layouts";
+import { Footer, Header } from "../../layouts";
 import { Hero, About, Projects, Experiences, Contact } from "./sections";
 import { ModalProvider } from "../../context/modal";
 
@@ -18,6 +18,7 @@ const Home: FC = () => {
         </div>
         <Contact />
       </main>
+      <Footer className="section-gap container mx-auto max-w-7xl" />
     </>
   );
 };

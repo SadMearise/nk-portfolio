@@ -18,3 +18,16 @@ export const NAV_ITEMS = {
   work: { href: "#work", title: "Work", id: "work" },
   contact: { href: "#contact", title: "Contact", id: "contact" },
 };
+
+export const SOCIALS = [
+  {
+    name: "Telegram",
+    href: "https://t.me/rtleee",
+    icon: "/assets/socials/telegram.svg",
+  },
+  {
+    name: "Linkedin",
+    href: "https://www.linkedin.com/in/nikita-khrustalev-358a12241/",
+    icon: "/assets/socials/linkedin.svg",
+  },
+];
