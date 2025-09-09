@@ -52,7 +52,7 @@ const ProjectDetailsModal: FC<Props> = ({
           className="absolute right-5 top-5 rounded-sm bg-midnight p-2 hover:bg-gray-500"
         >
           <img
-            src="assets/close.svg"
+            src="assets/images/close.svg"
             alt="close icon"
             className="size-6"
           />

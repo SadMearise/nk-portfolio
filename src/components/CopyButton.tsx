@@ -34,7 +34,7 @@ const CopyButton: FC<Props> = ({ className, label, successMessage, textToCopy })
             transition={{ duration: 0.1, ease: "easeInOut" }}
           >
             <img
-              src="assets/copy-done.svg"
+              src="assets/images/copy-done.svg"
               alt="copied icon"
               className="w-5"
             />
@@ -50,7 +50,7 @@ const CopyButton: FC<Props> = ({ className, label, successMessage, textToCopy })
             transition={{ duration: 0.1 }}
           >
             <img
-              src="assets/copy.svg"
+              src="assets/images/copy.svg"
               alt="copy icon"
               className="w-5"
             />

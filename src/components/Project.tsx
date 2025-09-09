@@ -36,7 +36,7 @@ const Project: FC<Props> = ({ className, title, tags, onMouseEnter, onMouseLeave
         >
           Read More
           <img
-            src="assets/arrow-right.svg"
+            src="assets/images/arrow-right.svg"
             alt="read more icon"
             className="w-5"
           />

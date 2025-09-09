@@ -44,7 +44,7 @@ const ProjectDetails = forwardRef<HTMLDivElement, Props>(
               target="_blank"
             >
               <img
-                src="assets/arrow-up.svg"
+                src="assets/images/arrow-up.svg"
                 alt="arrow-up icon"
                 className="size-4"
               />
