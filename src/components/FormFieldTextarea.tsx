@@ -16,7 +16,7 @@ const FormFieldTextarea: FC<Props> = ({ className, label, ...props }) => {
       </label>
       <textarea
         {...props}
-        className="field-input field-input-focus"
+        className="field-input field-input-focus max-h-96"
       />
     </div>
   );
