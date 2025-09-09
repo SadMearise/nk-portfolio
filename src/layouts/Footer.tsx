@@ -11,7 +11,13 @@ const Footer: FC<Props> = ({ className }) => {
     <footer className={cn(className, "x-indent pb-3 text-sm text-neutral-400")}>
       <div className="mb-4 h-px w-full bg-gradient-to-r from-transparent via-neutral-700 to-transparent" />
       <div className="flex items-center">
-        <span className="flex-[0_0_33.33%] gap-2">Privacy Police</span>
+        <a
+          className="flex-[0_0_33.33%] gap-2"
+          target="_blank"
+          href="./assets/docs/privacy-police.pdf"
+        >
+          Privacy Police
+        </a>
         <div className="flex flex-[0_0_33.33%] justify-center gap-3">
           {SOCIALS.map((social, index) => (
             <a
