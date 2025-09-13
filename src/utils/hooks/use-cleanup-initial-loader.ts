@@ -2,13 +2,23 @@ import { useEffect } from "react";
 
 const useCleanupInitialLoader = () => {
   useEffect(() => {
-    const loader = document.getElementById("initial-loader");
+    const removeLoader = () => {
+      const loader = document.getElementById("initial-loader");
 
-    window.addEventListener("load", () => {
       if (loader) {
         loader.remove();
       }
-    });
+    };
+
+    if (document.readyState === "complete") {
+      requestAnimationFrame(removeLoader);
+
+      return;
+    }
+
+    window.addEventListener("load", removeLoader);
+
+    return () => window.removeEventListener("load", removeLoader);
   }, []);
 };
 
