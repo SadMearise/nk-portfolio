@@ -12,16 +12,16 @@ I specialize in creating responsive, cross-browser web applications using **Java
 
 ## Tech Stack
 
-- **Languages:** JavaScript (ES5, ES6+), TypeScript, HTML, CSS, Python  
-- **Frameworks/Libraries:** React, React Router, React Query, Next.js, Redux, Redux Toolkit, Zustand, GraphQL, Axios, shadcn/ui, Material UI  
-- **Tools:** Tailwind, Sass, Webpack, Vite, Gulp, ESLint, Prettier, Jest, Docker, Git, GitHub, GitLab  
-- **Concepts:** SOLID, OOP, DRY, KISS, YAGNI, CI/CD, SPA, RESTful APIs, BEM, Agile/Scrum, Databases  
-- **Language Skills:** English A2, Russian native 
+- **Languages:** JavaScript (ES5, ES6+), TypeScript, HTML, CSS, Python
+- **Frameworks/Libraries:** React, React Router, React Query, Next.js, Redux, Redux Toolkit, Zustand, GraphQL, Axios, shadcn/ui, Material UI
+- **Tools:** Tailwind, Sass, Webpack, Vite, Gulp, ESLint, Prettier, Jest, Docker, Git, GitHub, GitLab
+- **Concepts:** SOLID, OOP, DRY, KISS, YAGNI, CI/CD, SPA, RESTful APIs, BEM, Agile/Scrum, Databases
+- **Language Skills:** English A2, Russian native
 
 ## Contact
 
 If you’d like to collaborate or just want to say hi:
 
-- ✉️ **Email:** [nikita.khrustalev.work@gmail.com](#)  
-- 🌐 **LinkedIn:** [Nikita Khrustalev](https://www.linkedin.com/in/nikita-khrustalev-358a12241/)  
+- ✉️ **Email:** [nikita.khrustalev.work@gmail.com](#)
+- 🌐 **LinkedIn:** [Nikita Khrustalev](https://www.linkedin.com/in/nikita-khrustalev-358a12241/)
 - 💬 **Telegram:** [@rtleee](https://t.me/rtleee)
