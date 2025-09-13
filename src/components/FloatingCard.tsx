@@ -31,6 +31,7 @@ const FloatingCard: FC<Props> = ({ className, style, containerRef, text, image }
         drag
         dragConstraints={containerRef}
         dragElastic={1}
+        alt="card icon"
       />
     );
   }
