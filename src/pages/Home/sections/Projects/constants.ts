@@ -8,7 +8,7 @@ export const PROJECTS: Project[] = [
     description:
       "Developed an online store for desktop. Designed the database architecture using PostgreSQL, integrated the YooKassa payment system, configured address autofill with Dadata, and set up email notifications via Resend. Implemented a user-friendly interface with efficient form data processing and modern UI components.",
     href: "https://next-pizza-dun-two.vercel.app/",
-    image: "./assets/images/projects/next-pizza.jpg",
+    image: "./assets/images/projects/next-pizza.webp",
     tags: [
       {
         id: 1,
@@ -54,7 +54,7 @@ export const PROJECTS: Project[] = [
     description:
       "Built a digital music service integrated with the Spotify API, providing access to millions of songs. Implemented user authentication, an audio player, a search system, a favorites system, navigation, smooth content loading, visual effects, and a notification system. Also configured CI/CD for automatic application deployment.",
     href: "https://sadmearise.github.io/soty/",
-    image: "./assets/images/projects/soty.jpg",
+    image: "./assets/images/projects/soty.webp",
     tags: [
       {
         id: 1,
@@ -90,7 +90,7 @@ export const PROJECTS: Project[] = [
     description:
       "Developed an e-commerce application as a team lead of a 3-person team. Introduced the SCRUM methodology, integrated the Commercetools API, and conducted code reviews. Implemented key features such as routing, product cards, cart management, filtering, sorting, search, category navigation, and pagination, ensuring a convenient and functional user interface.",
     href: "https://sadmearise.github.io/eCommerce-Application/",
-    image: "./assets/images/projects/kratkoe.jpg",
+    image: "./assets/images/projects/kratkoe.webp",
     tags: [
       {
         id: 1,
@@ -136,7 +136,7 @@ export const PROJECTS: Project[] = [
     description:
       "Developed a simulator for practicing CSS, featuring a level and hint system, a code editor, an HTML preview window, level navigation, syntax highlighting, progress saving after page reload, and other functionalities.",
     href: "https://sadmearise.github.io/css-selectors/",
-    image: "./assets/images/projects/css-selectors.jpg",
+    image: "./assets/images/projects/css-selectors.webp",
     tags: [
       {
         id: 1,
@@ -167,7 +167,7 @@ export const PROJECTS: Project[] = [
     description:
       "Developed a classic Minesweeper game with customizable game board settings, game state preservation after reload, a leaderboard, sound effects, statistics, color themes, and more. A key feature of the project is HTML generation directly via JavaScript.",
     href: "https://sadmearise.github.io/minesweeper/",
-    image: "./assets/images/projects/minesweeper.jpg",
+    image: "./assets/images/projects/minesweeper.webp",
     tags: [
       {
         id: 1,
@@ -193,7 +193,7 @@ export const PROJECTS: Project[] = [
     description:
       "Developed a virtual keyboard that mimics the behavior of a real keyboard. Implemented an input field with editing capabilities, language switching, case toggling, visual key press display, and other features. A key feature of the project is HTML generation directly via JavaScript.",
     href: "https://sadmearise.github.io/virtual-keyboard/",
-    image: "./assets/images/projects/virtual-keyboard.jpg",
+    image: "./assets/images/projects/virtual-keyboard.webp",
     tags: [
       {
         id: 1,
@@ -219,7 +219,7 @@ export const PROJECTS: Project[] = [
     description:
       "Developed a multi-page website featuring components such as a Swiper.js-based slider, an audio player, content filtering, and a burger menu. Implemented smooth anchor transitions, cross-browser compatibility, and a responsive design.",
     href: "https://sadmearise.github.io/antytila/dist/",
-    image: "./assets/images/projects/antytila.jpg",
+    image: "./assets/images/projects/antytila.webp",
     tags: [
       {
         id: 1,

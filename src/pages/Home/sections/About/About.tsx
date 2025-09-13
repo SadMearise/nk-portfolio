@@ -21,7 +21,7 @@ const About: FC<Props> = ({ className }) => {
         {/* Grid 1 */}
         <div className="bg-gradient-primary hover-lift relative row-span-2 flex h-60 items-end overflow-hidden rounded-2xl  p-6 md:col-span-3 md:h-full">
           <img
-            src="assets/images/coding-pov.png"
+            src="assets/images/coding-pov.webp"
             className="absolute -right-20 -top-4 scale-[1.75] md:inset-y-10 md:left-[200px] md:scale-[3] lg:scale-[2.5]"
             alt="background"
           />
