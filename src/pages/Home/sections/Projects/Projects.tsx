@@ -1,12 +1,16 @@
-import React, { FC, useContext, useState } from "react";
+import React, { FC, lazy, useContext, useState } from "react";
 import { cn } from "../../../../utils/helpers";
 import { PROJECTS } from "./constants";
-import { Line, PreviewImage, Project, ProjectDetailsModal } from "../../../../components";
+import { Line, PreviewImage, Project } from "../../../../components";
 import { motion } from "motion/react";
 import { useFollowCursor } from "../../../../utils/hooks";
 import { ModalContext, ModalContextType } from "../../../../context/modal";
 import { type Project as ProjectType } from "./types";
 import { NAV_ITEMS } from "../../../../utils/constants";
+
+const ProjectDetailsModal = lazy(() =>
+  import("../../../../components").then((m) => ({ default: m.ProjectDetailsModal })),
+);
 
 type Props = {
   className?: string;

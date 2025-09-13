@@ -13,6 +13,7 @@ const PreviewImage: FC<Props> = ({ className, ...props }) => {
         "pointer-events-none h-56 w-80 rounded-lg object-cover shadow-lg will-change-transform",
       )}
       {...props}
+      loading="lazy"
     />
   );
 };
