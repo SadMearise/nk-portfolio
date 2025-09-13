@@ -16,10 +16,34 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>NK | Portfolio</title>
-    <script type="module" crossorigin src="/nk-portfolio/assets/index-kGkSB-MP.js"></script>
+    <style>
+      .loader-wrapper {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #030412;
+        color: white;
+        z-index: 50;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .loader {
+        font-weight: bold;
+        animation: blink 1s infinite;
+      }
+      @keyframes blink {
+        0%, 50%, 100% { opacity: 1; }
+        25%, 75% { opacity: 0.3; }
+      }
+    </style>
+    <script type="module" crossorigin src="/nk-portfolio/assets/index-DgkwIt4A.js"></script>
     <link rel="stylesheet" crossorigin href="/nk-portfolio/assets/index-C37lnljh.css">
   </head>
   <body>
     <div id="root"></div>
+    <div id="initial-loader" class="loader-wrapper">
+      <div class="loader">Loading...</div>
+    </div>
   </body>
 </html>
