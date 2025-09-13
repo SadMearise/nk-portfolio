@@ -9,6 +9,7 @@ import useOnClickOutside from "./use-on-click-outside";
 import useScrollLock from "./use-scroll-lock";
 import useTimelineScroll from "./use-timeline-scroll";
 import useAlert from "./use-alert";
+import useCleanupInitialLoader from "./use-cleanup-initial-loader";
 
 export {
   useFallingAnimation,
@@ -22,4 +23,5 @@ export {
   useScrollLock,
   useTimelineScroll,
   useAlert,
+  useCleanupInitialLoader,
 };

@@ -16,9 +16,33 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title>NK | Portfolio</title>
+    <style>
+      .loader-wrapper {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #030412;
+        color: white;
+        z-index: 50;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .loader {
+        font-weight: bold;
+        animation: blink 1s infinite;
+      }
+      @keyframes blink {
+        0%, 50%, 100% { opacity: 1; }
+        25%, 75% { opacity: 0.3; }
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
+    <div id="initial-loader" class="loader-wrapper">
+      <div class="loader">Loading...</div>
+    </div>
     <script
       type="module"
       src="/src/main.jsx"
