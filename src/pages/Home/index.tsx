@@ -1,7 +1,12 @@
-import { FC } from "react";
+import { FC, lazy } from "react";
 import { Footer, Header } from "../../layouts";
-import { Hero, About, Projects, Experiences, Contact } from "./sections";
+import { Hero } from "./sections";
 import { ModalProvider } from "../../context/modal";
+
+const About = lazy(() => import("./sections").then((m) => ({ default: m.About })));
+const Projects = lazy(() => import("./sections").then((m) => ({ default: m.Projects })));
+const Experiences = lazy(() => import("./sections").then((m) => ({ default: m.Experiences })));
+const Contact = lazy(() => import("./sections").then((m) => ({ default: m.Contact })));
 
 const Home: FC = () => {
   return (
