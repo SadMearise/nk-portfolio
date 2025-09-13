@@ -6,6 +6,9 @@ export default defineConfig(({ command }) => {
   const config = {
     plugins: [react()],
     base: command === "build" ? "/nk-portfolio/" : "/",
+    build: {
+      sourcemap: true,
+    },
   };
 
   return config;
