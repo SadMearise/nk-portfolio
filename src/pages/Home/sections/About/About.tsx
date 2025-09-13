@@ -23,6 +23,7 @@ const About: FC<Props> = ({ className }) => {
           <img
             src="assets/images/coding-pov.png"
             className="absolute -right-20 -top-4 scale-[1.75] md:inset-y-10 md:left-[200px] md:scale-[3] lg:scale-[2.5]"
+            alt="background"
           />
           <div className="z-10">
             <p className="my-2 text-xl">

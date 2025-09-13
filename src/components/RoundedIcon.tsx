@@ -1,16 +1,15 @@
-import { FC } from "react";
+import { FC, ImgHTMLAttributes } from "react";
 import { cn } from "../utils/helpers";
 
-type Props = {
+type Props = ImgHTMLAttributes<HTMLImageElement> & {
   className?: string;
-  src: string;
 };
 
-const RoundedIcon: FC<Props> = ({ className, src }) => {
+const RoundedIcon: FC<Props> = ({ className, ...props }) => {
   return (
     <img
-      src={src}
       className={cn(className, "rounded-sm duration-200 hover:scale-110")}
+      {...props}
     />
   );
 };

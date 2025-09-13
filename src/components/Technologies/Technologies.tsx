@@ -16,6 +16,7 @@ const Technologies: FC<Props> = ({ className }) => {
           <RoundedIcon
             key={index}
             src={technology.link}
+            alt={technology.name}
           />
         ))}
       </OrbitingCircles>
@@ -29,6 +30,7 @@ const Technologies: FC<Props> = ({ className }) => {
           <RoundedIcon
             key={index}
             src={technology.link}
+            alt={technology.name}
           />
         ))}
       </OrbitingCircles>
